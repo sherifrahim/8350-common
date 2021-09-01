@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Charge control
+PRODUCT_PACKAGES += \
+    vendor.kscope.chgctrl@1.0-service.oneplus_lahaina
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
