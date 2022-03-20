@@ -1322,6 +1322,7 @@ vendor/bin/cnss-daemon
 
 # WiFi Display - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
 -system/framework/WfdCommon.jar|6339d5ee54646a9006ac20b8201f3ce477743a54
+system/lib64/libinput.so:system/lib64/libwfdinput.so|f0f6ff230fc5e5041a1b445d932709b769c9f467
 system_ext/bin/wfdservice|2d9bde189325b3faf4e1571543867c6a7e00762d
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
@@ -1355,7 +1356,7 @@ system_ext/lib64/libwfdconfigutils.so|7a4bb44d3d510458be42259c183ce58cf85c529c
 system_ext/lib64/libwfddisplayconfig.so|635ccdc62a3a3c4b74abd1753eadf8c234cbc036
 system_ext/lib64/libwfdmminterface.so|e336cbd7189ca6f232bfae3cca3634bffe3fd035
 system_ext/lib64/libwfdmmsink.so|6d242e3cea5dc46cbd237a3b02e5596581091250
-system_ext/lib64/libwfdnative.so|7c3f53310960b8d1015e7cac0297bb677f3ff0df
+system_ext/lib64/libwfdnative.so|5aead1c4d575e39d44bb37884179ecd831be0d23
 system_ext/lib64/libwfdrtsp.so|2fb6c120db75e8b7fb4a08c48659e8bb7d0376b2
 system_ext/lib64/libwfdsinksm.so|7f8ace302737112b7b8b7862d8462e5e55a6af1c
 system_ext/lib64/libwfduibcinterface.so|1e8df941b0c2f71ad0e15e85522f177ed38e766d
