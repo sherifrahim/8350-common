@@ -27,7 +27,6 @@ import androidx.preference.PreferenceManager;
 
 import org.aosp.device.OnePlusSettings.OnePlusSettings;
 import org.aosp.device.OnePlusSettings.ModeSwitch.DCModeSwitch;
-import org.aosp.device.OnePlusSettings.ModeSwitch.DolbySwitch;
 import org.aosp.device.OnePlusSettings.ModeSwitch.EdgeTouchSwitch;
 import org.aosp.device.OnePlusSettings.ModeSwitch.GameModeSwitch;
 import org.aosp.device.OnePlusSettings.ModeSwitch.HBMModeSwitch;
@@ -35,8 +34,6 @@ import org.aosp.device.OnePlusSettings.Utils.FileUtils;
 import org.aosp.device.OnePlusSettings.Utils.DozeUtils;
 
 public class Startup extends BroadcastReceiver {
-
-    private static final String ONE_TIME_DOLBY = "dolby_init_disabled";
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
@@ -60,14 +57,6 @@ public class Startup extends BroadcastReceiver {
 
         enabled = sharedPrefs.getBoolean(OnePlusSettings.KEY_EDGE_TOUCH, false);
         restore(EdgeTouchSwitch.getFile(), enabled);
-
-        enabled = sharedPrefs.getBoolean(ONE_TIME_DOLBY, false);
-        if (!enabled) {
-            // we want to disable it by default, only once.
-            DolbySwitch dolbySwitch = new DolbySwitch(context);
-            dolbySwitch.setEnabled(false);
-            sharedPrefs.edit().putBoolean(ONE_TIME_DOLBY, true).apply();
-        }
 
         DozeUtils.checkDozeService(context);
         OnePlusSettings.restoreVibStrengthSetting(context);
