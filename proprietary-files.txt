@@ -541,7 +541,7 @@ system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|cdd700ce16303ff2baa4
 system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
 system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
 system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
--system_ext/priv-app/DaxUI/DaxUI.apk|66729403dc0101ff82af4f2e9698180ae170a3fc
+-system_ext/priv-app/DaxUI/DaxUI.apk|fdf7b8923550006d5ea8456fe790949c707f65eb
 
 # Dolby (system)
 system/lib64/vendor.dolby.hardware.dms@2.0.so
@@ -556,6 +556,9 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/libdapparamstorage.so
 vendor/lib/libdeccfg.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefrightdolby.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/soundfx/libeffectproxy.so
 vendor/lib64/soundfx/libhwdap.so
@@ -564,6 +567,9 @@ vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/libdlbdsservice.so
+vendor/lib64/libstagefright_soft_ac4dec.so
+vendor/lib64/libstagefright_soft_ddpdec.so
+vendor/lib64/libstagefrightdolby.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
