@@ -26,8 +26,6 @@ namespace powershare {
 namespace V1_0 {
 namespace implementation {
 
-#define WIRELESS_TX_ENABLE_PATH "/sys/class/oplus_chg/wireless/trx_online"
-
 /*
  * Write value to path and close file.
  */
